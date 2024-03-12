@@ -78,7 +78,7 @@
             pictureBox1.BackColor = SystemColors.Desktop;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1061, 495);
+            pictureBox1.Size = new Size(1089, 431);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
