@@ -119,7 +119,7 @@
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Name = "btnMekanizmayi_Belli_Bir_Acida_Calistir";
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Size = new Size(256, 75);
             btnMekanizmayi_Belli_Bir_Acida_Calistir.TabIndex = 3;
-            btnMekanizmayi_Belli_Bir_Acida_Calistir.Text = "Mekanizmayı Belli Bir Açıya Ayarla";
+            btnMekanizmayi_Belli_Bir_Acida_Calistir.Text = "Mekanizmayı Ayarla";
             btnMekanizmayi_Belli_Bir_Acida_Calistir.UseVisualStyleBackColor = false;
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Click += btnMekanizmayi_Belli_Bir_Acida_Calistir_Click;
             // 
@@ -159,10 +159,10 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtR1_L);
             groupBox1.Controls.Add(label2);
-            groupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            groupBox1.Location = new Point(1111, 205);
+            groupBox1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            groupBox1.Location = new Point(1111, 190);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(617, 259);
+            groupBox1.Size = new Size(617, 243);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Vektörel Konum Tablosu";
@@ -171,28 +171,28 @@
             // 
             txtR4_θ.Location = new Point(372, 169);
             txtR4_θ.Name = "txtR4_θ";
-            txtR4_θ.Size = new Size(200, 30);
+            txtR4_θ.Size = new Size(200, 34);
             txtR4_θ.TabIndex = 13;
             // 
             // txtR3_θ
             // 
             txtR3_θ.Location = new Point(372, 133);
             txtR3_θ.Name = "txtR3_θ";
-            txtR3_θ.Size = new Size(200, 30);
+            txtR3_θ.Size = new Size(200, 34);
             txtR3_θ.TabIndex = 12;
             // 
             // txtR2_θ
             // 
             txtR2_θ.Location = new Point(372, 97);
             txtR2_θ.Name = "txtR2_θ";
-            txtR2_θ.Size = new Size(200, 30);
+            txtR2_θ.Size = new Size(200, 34);
             txtR2_θ.TabIndex = 11;
             // 
             // txtR1_θ
             // 
             txtR1_θ.Location = new Point(372, 61);
             txtR1_θ.Name = "txtR1_θ";
-            txtR1_θ.Size = new Size(200, 30);
+            txtR1_θ.Size = new Size(200, 34);
             txtR1_θ.TabIndex = 10;
             // 
             // label7
@@ -219,8 +219,9 @@
             // 
             txtR4_L.Location = new Point(58, 169);
             txtR4_L.Name = "txtR4_L";
-            txtR4_L.Size = new Size(200, 30);
+            txtR4_L.Size = new Size(200, 34);
             txtR4_L.TabIndex = 7;
+            txtR4_L.Text = "250";
             // 
             // label5
             // 
@@ -236,8 +237,9 @@
             // 
             txtR3_L.Location = new Point(58, 135);
             txtR3_L.Name = "txtR3_L";
-            txtR3_L.Size = new Size(200, 30);
+            txtR3_L.Size = new Size(200, 34);
             txtR3_L.TabIndex = 5;
+            txtR3_L.Text = "300";
             // 
             // label4
             // 
@@ -253,8 +255,9 @@
             // 
             txtR2_L.Location = new Point(58, 97);
             txtR2_L.Name = "txtR2_L";
-            txtR2_L.Size = new Size(200, 30);
+            txtR2_L.Size = new Size(200, 34);
             txtR2_L.TabIndex = 3;
+            txtR2_L.Text = "100";
             // 
             // label3
             // 
@@ -270,8 +273,9 @@
             // 
             txtR1_L.Location = new Point(58, 61);
             txtR1_L.Name = "txtR1_L";
-            txtR1_L.Size = new Size(200, 30);
+            txtR1_L.Size = new Size(200, 34);
             txtR1_L.TabIndex = 1;
+            txtR1_L.Text = "400";
             // 
             // label2
             // 
@@ -299,10 +303,10 @@
             groupBox2.Controls.Add(label12);
             groupBox2.Controls.Add(txtAx);
             groupBox2.Controls.Add(label13);
-            groupBox2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            groupBox2.Location = new Point(1111, 506);
+            groupBox2.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            groupBox2.Location = new Point(1111, 473);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(617, 264);
+            groupBox2.Size = new Size(617, 297);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "Mafsal Konum Tablosu";
@@ -311,28 +315,28 @@
             // 
             txtDy.Location = new Point(372, 169);
             txtDy.Name = "txtDy";
-            txtDy.Size = new Size(200, 30);
+            txtDy.Size = new Size(200, 34);
             txtDy.TabIndex = 13;
             // 
             // txtCy
             // 
             txtCy.Location = new Point(372, 133);
             txtCy.Name = "txtCy";
-            txtCy.Size = new Size(200, 30);
+            txtCy.Size = new Size(200, 34);
             txtCy.TabIndex = 12;
             // 
             // txtBy
             // 
             txtBy.Location = new Point(372, 97);
             txtBy.Name = "txtBy";
-            txtBy.Size = new Size(200, 30);
+            txtBy.Size = new Size(200, 34);
             txtBy.TabIndex = 11;
             // 
             // txtAy
             // 
             txtAy.Location = new Point(372, 61);
             txtAy.Name = "txtAy";
-            txtAy.Size = new Size(200, 30);
+            txtAy.Size = new Size(200, 34);
             txtAy.TabIndex = 10;
             // 
             // label8
@@ -359,7 +363,7 @@
             // 
             txtDx.Location = new Point(43, 169);
             txtDx.Name = "txtDx";
-            txtDx.Size = new Size(200, 30);
+            txtDx.Size = new Size(200, 34);
             txtDx.TabIndex = 7;
             // 
             // label10
@@ -376,7 +380,7 @@
             // 
             txtCx.Location = new Point(43, 133);
             txtCx.Name = "txtCx";
-            txtCx.Size = new Size(200, 30);
+            txtCx.Size = new Size(200, 34);
             txtCx.TabIndex = 5;
             // 
             // label11
@@ -393,7 +397,7 @@
             // 
             txtBx.Location = new Point(43, 97);
             txtBx.Name = "txtBx";
-            txtBx.Size = new Size(200, 30);
+            txtBx.Size = new Size(200, 34);
             txtBx.TabIndex = 3;
             // 
             // label12
@@ -410,7 +414,7 @@
             // 
             txtAx.Location = new Point(43, 61);
             txtAx.Name = "txtAx";
-            txtAx.Size = new Size(200, 30);
+            txtAx.Size = new Size(200, 34);
             txtAx.TabIndex = 1;
             // 
             // label13
