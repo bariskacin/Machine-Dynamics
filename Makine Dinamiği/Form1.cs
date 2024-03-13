@@ -25,6 +25,8 @@ namespace Makine_Dinamiği
         double Dy = 0;
         double Aci1 = 180.0, Aci2 = 60, Aci3 = 0, Aci4 = 0; //Dereceler gösterimlerde kullanılıyor
         double Aci2Radyan = 60, Aci3Radyan = 0, Aci4Radyan = 0; //Radyanlar hesaplamalarda kullanılıyor
+
+        /**************** MEKANİZMA UZUNLUKLARI *******************/
         double R1 = 400;
         double R2 = 100;
         double R3 = 300;
@@ -38,7 +40,15 @@ namespace Makine_Dinamiği
         //****************** MEKANİZMA ÇALIŞTIR ****************************
         private void btnMekanizmayi_Calistir_Click(object sender, EventArgs e)
         {
-            timer1.Enabled = true;
+            if (double.TryParse(txtR1_L.Text, out R1) &&
+                double.TryParse(txtR2_L.Text, out R2) &&
+                double.TryParse(txtR3_L.Text, out R3) &&
+                double.TryParse(txtR4_L.Text, out R4))
+            {
+                timer1.Enabled = true;
+            }
+
+                
         }
         //****************** MEKANİZMA DURDUR ****************************
         private void btnMekanizmayi_Durdur_Click(object sender, EventArgs e)
@@ -61,7 +71,14 @@ namespace Makine_Dinamiği
         //****************** BELLİ BİR AÇIDA ÇALIŞTIR ****************************
         private void btnMekanizmayi_Belli_Bir_Acida_Calistir_Click(object sender, EventArgs e)
         {
-            Aci2 = Convert.ToDouble(txtTahrikAcisi.Text);
+            if (double.TryParse(txtR1_L.Text, out R1) &&
+                double.TryParse(txtR2_L.Text, out R2) &&
+                double.TryParse(txtR3_L.Text, out R3) &&
+                double.TryParse(txtR4_L.Text, out R4))
+            {
+                Aci2 = Convert.ToDouble(txtTahrikAcisi.Text);
+            }
+                
             AcilariVeKonumlariHesapla(Aci2);
             MekanizmaCiziminiGoster();
             VektorelKonumTablosunuGoster();
@@ -136,11 +153,23 @@ namespace Makine_Dinamiği
         }
         public void CizgiCiz(Pen Kalem, double X1, double Y1, double X2, double Y2)
         {
+            if (double.IsNaN(X1) || double.IsNaN(Y1) || double.IsNaN(X2) || double.IsNaN(Y2))
+            {
+                // NaN Sonuçkarı değerlendiriliyor.
+                Console.WriteLine("Input değerlerde NaN bulunmakta. Cizgi oluşturulamadı.");
+                return;
+            }
             //Dikkat orijini ekranın sol üst köşesinden ortaya taşıyor (OrijinX, OrijinY). Ayrıca ekranda y eksenleri aşağı baktığından bunları yukarı çevirmek için -1 ile çarpıyor)  
             grafik.DrawLine(Kalem, (int)(X1 + OrijinX), (int)(Y1 * (-1) + OrijinY),(int)(X2 + OrijinX), (int)(Y2 * (-1) + OrijinY));
         }
         public void DaireCiz(Pen Kalem, double X, double Y)
         {
+            if (double.IsNaN(X) || double.IsNaN(Y))
+            {
+                // NaN Sonuçkarı değerlendiriliyor.
+                Console.WriteLine("Input değerlerde NaN bulunmakta. Daire oluşturulamadı.");
+                return;
+            }
             //Dikkat orijini ekranın sol üst köşesinden ortaya taşıyor (OrijinX, OrijinY). Ayrıca ekranda y eksenleri aşağı baktığından bunları yukarı çevirmek için -1 ile çarpıyor)  
             grafik.DrawEllipse(Kalem, (int)((X) + OrijinX), (int)((Y) * (-1) + OrijinY), 1, 1); //Genişliği ve yüksekliği 1 piksel bir daire çiziyor. Daire gözükmesi için Kalem çapı yukarıda 10 piksel yapıldı. 
         }
