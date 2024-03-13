@@ -78,12 +78,13 @@
             pictureBox1.BackColor = SystemColors.Desktop;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1089, 431);
+            pictureBox1.Size = new Size(1089, 758);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // timer1
             // 
+            timer1.Interval = 10;
             timer1.Tick += timer1_Tick;
             // 
             // btnMekanizmayi_Calistir
@@ -118,7 +119,7 @@
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Name = "btnMekanizmayi_Belli_Bir_Acida_Calistir";
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Size = new Size(256, 75);
             btnMekanizmayi_Belli_Bir_Acida_Calistir.TabIndex = 3;
-            btnMekanizmayi_Belli_Bir_Acida_Calistir.Text = "Mekanizmayı Belli Bir Açıda Çalıştır";
+            btnMekanizmayi_Belli_Bir_Acida_Calistir.Text = "Mekanizmayı Belli Bir Açıya Ayarla";
             btnMekanizmayi_Belli_Bir_Acida_Calistir.UseVisualStyleBackColor = false;
             btnMekanizmayi_Belli_Bir_Acida_Calistir.Click += btnMekanizmayi_Belli_Bir_Acida_Calistir_Click;
             // 
@@ -159,46 +160,46 @@
             groupBox1.Controls.Add(txtR1_L);
             groupBox1.Controls.Add(label2);
             groupBox1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            groupBox1.Location = new Point(1107, 231);
+            groupBox1.Location = new Point(1111, 205);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(301, 212);
+            groupBox1.Size = new Size(617, 259);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Text = "Vektörel Konum Tablosu";
             // 
             // txtR4_θ
             // 
-            txtR4_θ.Location = new Point(183, 169);
+            txtR4_θ.Location = new Point(372, 169);
             txtR4_θ.Name = "txtR4_θ";
-            txtR4_θ.Size = new Size(99, 30);
+            txtR4_θ.Size = new Size(200, 30);
             txtR4_θ.TabIndex = 13;
             // 
             // txtR3_θ
             // 
-            txtR3_θ.Location = new Point(183, 133);
+            txtR3_θ.Location = new Point(372, 133);
             txtR3_θ.Name = "txtR3_θ";
-            txtR3_θ.Size = new Size(99, 30);
+            txtR3_θ.Size = new Size(200, 30);
             txtR3_θ.TabIndex = 12;
             // 
             // txtR2_θ
             // 
-            txtR2_θ.Location = new Point(183, 97);
+            txtR2_θ.Location = new Point(372, 97);
             txtR2_θ.Name = "txtR2_θ";
-            txtR2_θ.Size = new Size(99, 30);
+            txtR2_θ.Size = new Size(200, 30);
             txtR2_θ.TabIndex = 11;
             // 
             // txtR1_θ
             // 
-            txtR1_θ.Location = new Point(183, 61);
+            txtR1_θ.Location = new Point(372, 61);
             txtR1_θ.Name = "txtR1_θ";
-            txtR1_θ.Size = new Size(99, 30);
+            txtR1_θ.Size = new Size(200, 30);
             txtR1_θ.TabIndex = 10;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label7.Location = new Point(202, 26);
+            label7.Location = new Point(391, 26);
             label7.Name = "label7";
             label7.Size = new Size(29, 32);
             label7.TabIndex = 9;
@@ -218,7 +219,7 @@
             // 
             txtR4_L.Location = new Point(58, 169);
             txtR4_L.Name = "txtR4_L";
-            txtR4_L.Size = new Size(82, 30);
+            txtR4_L.Size = new Size(200, 30);
             txtR4_L.TabIndex = 7;
             // 
             // label5
@@ -235,7 +236,7 @@
             // 
             txtR3_L.Location = new Point(58, 135);
             txtR3_L.Name = "txtR3_L";
-            txtR3_L.Size = new Size(82, 30);
+            txtR3_L.Size = new Size(200, 30);
             txtR3_L.TabIndex = 5;
             // 
             // label4
@@ -252,7 +253,7 @@
             // 
             txtR2_L.Location = new Point(58, 97);
             txtR2_L.Name = "txtR2_L";
-            txtR2_L.Size = new Size(82, 30);
+            txtR2_L.Size = new Size(200, 30);
             txtR2_L.TabIndex = 3;
             // 
             // label3
@@ -269,7 +270,7 @@
             // 
             txtR1_L.Location = new Point(58, 61);
             txtR1_L.Name = "txtR1_L";
-            txtR1_L.Size = new Size(82, 30);
+            txtR1_L.Size = new Size(200, 30);
             txtR1_L.TabIndex = 1;
             // 
             // label2
@@ -299,46 +300,46 @@
             groupBox2.Controls.Add(txtAx);
             groupBox2.Controls.Add(label13);
             groupBox2.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            groupBox2.Location = new Point(1414, 231);
+            groupBox2.Location = new Point(1111, 506);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(314, 212);
+            groupBox2.Size = new Size(617, 264);
             groupBox2.TabIndex = 7;
             groupBox2.TabStop = false;
             groupBox2.Text = "Mafsal Konum Tablosu";
             // 
             // txtDy
             // 
-            txtDy.Location = new Point(183, 169);
+            txtDy.Location = new Point(372, 169);
             txtDy.Name = "txtDy";
-            txtDy.Size = new Size(101, 30);
+            txtDy.Size = new Size(200, 30);
             txtDy.TabIndex = 13;
             // 
             // txtCy
             // 
-            txtCy.Location = new Point(183, 133);
+            txtCy.Location = new Point(372, 133);
             txtCy.Name = "txtCy";
-            txtCy.Size = new Size(101, 30);
+            txtCy.Size = new Size(200, 30);
             txtCy.TabIndex = 12;
             // 
             // txtBy
             // 
-            txtBy.Location = new Point(183, 97);
+            txtBy.Location = new Point(372, 97);
             txtBy.Name = "txtBy";
-            txtBy.Size = new Size(101, 30);
+            txtBy.Size = new Size(200, 30);
             txtBy.TabIndex = 11;
             // 
             // txtAy
             // 
-            txtAy.Location = new Point(183, 61);
+            txtAy.Location = new Point(372, 61);
             txtAy.Name = "txtAy";
-            txtAy.Size = new Size(101, 30);
+            txtAy.Size = new Size(200, 30);
             txtAy.TabIndex = 10;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 162);
-            label8.Location = new Point(219, 26);
+            label8.Location = new Point(385, 26);
             label8.Name = "label8";
             label8.Size = new Size(35, 32);
             label8.TabIndex = 9;
@@ -358,7 +359,7 @@
             // 
             txtDx.Location = new Point(43, 169);
             txtDx.Name = "txtDx";
-            txtDx.Size = new Size(99, 30);
+            txtDx.Size = new Size(200, 30);
             txtDx.TabIndex = 7;
             // 
             // label10
@@ -375,7 +376,7 @@
             // 
             txtCx.Location = new Point(43, 133);
             txtCx.Name = "txtCx";
-            txtCx.Size = new Size(99, 30);
+            txtCx.Size = new Size(200, 30);
             txtCx.TabIndex = 5;
             // 
             // label11
@@ -392,7 +393,7 @@
             // 
             txtBx.Location = new Point(43, 97);
             txtBx.Name = "txtBx";
-            txtBx.Size = new Size(99, 30);
+            txtBx.Size = new Size(200, 30);
             txtBx.TabIndex = 3;
             // 
             // label12
@@ -409,7 +410,7 @@
             // 
             txtAx.Location = new Point(43, 61);
             txtAx.Name = "txtAx";
-            txtAx.Size = new Size(99, 30);
+            txtAx.Size = new Size(200, 30);
             txtAx.TabIndex = 1;
             // 
             // label13
@@ -444,6 +445,8 @@
             Controls.Add(btnMekanizmayi_Durdur);
             Controls.Add(btnMekanizmayi_Calistir);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "Form1";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;

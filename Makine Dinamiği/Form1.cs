@@ -9,12 +9,12 @@ namespace Makine_Dinamiği
 
         Graphics grafik;
         Pen KalemBeyaz = new Pen(System.Drawing.Color.White, 10);
-        Pen KalemMavi = new Pen(System.Drawing.Color.Blue, 3);
-        Pen KalemSari = new Pen(System.Drawing.Color.Yellow, 3);
+        Pen KalemMavi = new Pen(System.Drawing.Color.Blue, 6);
+        Pen KalemSari = new Pen(System.Drawing.Color.Yellow, 6);
         Pen KalemKirmizi = new Pen(System.Drawing.Color.Red, 6);
         //Başlangıç değerleri. Tüm fonksiyonlarda kullanılacağından Global tanımlandı. 
-        double OrijinX = 200;
-        double OrijinY = 300;
+        double OrijinX = 300;
+        double OrijinY = 400;
         double Ax = 0;
         double Ay = 0;
         double Bx = 0;
